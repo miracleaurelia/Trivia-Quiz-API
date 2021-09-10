@@ -1,0 +1,131 @@
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #05c3de;
+}
+
+#selAnswers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#selAnswers div {
+    padding: 15px 20px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: blue;
+    z-index: 998;
+    cursor: pointer;
+    background: linear-gradient(to right, transparent 50%, #b6b284 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s;
+    color: #ffffff;
+    border: 3px solid #b6b284;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 1000px) {
+    #selAnswers div {
+        font-size: 1.7rem;
+    }
+}
+
+#selAnswers div:hover {
+    background-position: right;
+}
+
+.score {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.correct, .incorrect {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: blue;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+h4, h5 {
+    margin: 0.5rem;
+}
+
+.category {
+    margin: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.question {
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.button-wrap {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.button-wrap button {
+    padding: 0 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    transition: all 0.5s;
+    z-index: 1;
+    background-image: linear-gradient(-30deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);
+    border: none;
+}
+
+#correct-display, #wrong-display {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.fas.fa-check {
+    margin-right: 1rem;
+    color: green;
+}
+
+.fas.fa-times {
+    margin-right: 1rem;
+    color: red;
+}
+
+@media (max-width: 450px) {
+    .question {
+        font-size: 1.5rem;
+    }
+    #selAnswers div {
+        font-size: 1rem;
+    }
+}
+
+#correct-display p, #wrong-display p {
+    font-size: 1.2rem;
+}

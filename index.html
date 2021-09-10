@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AJAX</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="score">
+        <div class="correct">
+            <h4>Correct</h4>
+            <h5 id="right">0</h5>
+        </div>
+        <div class="incorrect">
+            <h4>Incorrect</h4>
+            <h5 id="wrong">0</h5>
+        </div>
+    </div>
+    <div id="output"></div>
+    <div class="display-ans">
+        <div id="correct-display">
+            <i class="fas fa-check fa-2x"></i>
+            <p>Correct!</p>
+        </div>
+        <div id="wrong-display">
+            <i class="fas fa-times fa-2x"></i>
+            <p id="correct-ans"></p>
+        </div>
+    </div>
+    
+    <div id="selAnswers"></div>
+    <div class="button-wrap">
+        <button type="button" id="btn">Click Me for More</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
